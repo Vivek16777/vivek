@@ -1,0 +1,395 @@
+.piano{
+    height: 100px;
+    display:grid;
+    grid-template-columns:repeat(40,1fr);
+    gap:2px;
+    position:relative;
+    width:100%;
+}
+.white-key{
+    background-color: whitesmoke;
+    z-index: index 1;;
+    width:35px;
+}
+.black-key{
+    background-color: black;
+    position:absolute;
+    z-index: 2;
+    height:50px;
+    width:30px;
+    margin-left:20px;
+}   
+.nav-bar{
+    list-style-type: none;
+}
+.piano-wrapper{
+    width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+}
+.white-key:active{
+    background-color: orangered;
+}
+.black-key:active{
+    background-color: orangered;
+}
+.nav-bar a{
+  color:white;
+}
+.outer-box{
+    width:100%;
+    display: flex;
+    height:80vh;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.inner-box{
+    width:80%;
+    display:grid;
+    height:80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #37373760;
+}
+.profile{
+    grid-row: 1/4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image{
+    height: 40vh;
+    border-radius:50%;
+}
+.coder-image{
+    height:150px;
+}
+.coder{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color:white;
+}
+.subheading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2rem;
+    color:white;
+}
+.outer{
+    width:100%;
+    height:200px;
+    display:grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: 1fr;
+}
+.outer-outer{
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mazza{
+    height:200px;
+}
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bbtn,.outer-box,.reachme{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    padding-bottom: 0%;
+    font-size:40px;
+}
+.school-container{
+    display:grid;
+}
+.border-bottom{
+    font-size: 50px;
+}
+.video-mims{
+    width:800px;
+    height:400px;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.school-image{
+    height:200px;
+}
+.skills-inner{
+    display:grid;
+    height:60vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+}
+.skill-image{
+    height:150px;
+    border-radius: 50%;
+}
+.skill-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-image{
+    height: 160px;
+}
+.inner-box2{
+    background-color: #373737;
+    height:80vh;
+    width:60ch;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    align-items: center;
+}
+.outer-box2{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    padding-bottom: 0%;
+    font-size:40px;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.head2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color:white;
+}
+.myphoto{
+    height:200px;
+} 
+.content{
+    height:100vh;
+    width:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #37373750;
+    border-radius: 12px;
+}
+.contain{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+} 
+.reachme{
+    height:120vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+.footer{
+    background-color:#373737;
+    color: white;
+    font-size: 20px;
+} 
+.image-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+.reach-me form{
+    height:60vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+.myphoto{
+    height:60vh;
+}
+.topic{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    font-weight: 600;
+    font-size:30px;
+    color: black;
+}
+.reachme-form{
+    height:50px;
+    font-size:25px;
+    width:400px;
+    backdrop-filter: blur(10px);
+    border:3px solid ;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+textarea {
+  overflow: hidden; 
+  resize: none; 
+      
+}
+.submit-button{
+    display: flex;
+    justify-content: flex-start;
+    height:50px;
+    font-size: 30px;
+}
+.submit{
+    width:200px;
+    border:3px solid ;
+    background: linear-gradient(300deg, violet, yellow, red);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    border-radius: 12px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  transition:0.3 ease;
+}
+.reachme-form:focus,
+.reachme-form:not(:placeholder-shown) {
+  background: rgba(0, 255, 128, 0.15);     /* light green */
+  border-color: #00c36b;
+  backdrop-filter: blur(5px);              /* 💫 blur effect */
+  box-shadow: 0 0 10px rgba(0, 255, 128, 0.4);
+}
+.reachme-form:-webkit-autofill {
+  background-color: rgba(0, 255, 128, 0.15) !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 255, 128, 0.15) inset !important;
+  box-shadow: 0 0 10px rgba(0, 255, 128, 0.4);
+  backdrop-filter: blur(5px);
+  border: 2px solid #00c36b;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000 !important;
+}
+.formerror{
+    font-size:20px;
+    color:black;
+}
+span,b{
+    height:20px;
+}
+@media (max-width:997px){
+    .outer-box{
+        display:flex;
+        justify-content: center;
+        height:900px;
+    }
+    .inner-box{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width:90%;
+    }
+    .header{
+        align-items: center;
+        font-size: 3rem;
+    }
+    .mazza{
+        height:130px;
+    }
+    .profile-image{
+        height:25vh;
+    }
+    .bbtn{
+        font-size:10px;
+    }
+    .outer-outer{
+        height:130px;
+    }
+    .outer{
+        height:130px;
+    }
+    .school-image{
+        height:150px;
+    }
+    .skills-inner{
+    display:grid;
+    height:60vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:20px;
+    }
+    .skill-image{
+        height:145px;
+        border-radius: 50%;
+    }
+    .skill-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-inner{
+        display:grid;
+        height:60vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap:20px;
+    }
+    .skills-outer{
+        height:175ch;
+    }
+    .project-image{
+        height:150px;
+    }
+    .video-mims{
+        width:300px;
+        height:200px;
+    }
+    .head2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .content{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .reachme,.content,.contain{
+        height:150vh;
+    }
+    .topic{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:15px;
+    }
+    .input-box ,.submit-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reachme-form{
+        width:300px;
+    }
+}
