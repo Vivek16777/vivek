@@ -8,7 +8,7 @@
 }
 .white-key{
     background-color: whitesmoke;
-    z-index: index 1;;
+    z-index: 1;
     width:35px;
 }
 .black-key{
@@ -278,9 +278,9 @@ textarea::placeholder {
 }
 .reachme-form:focus,
 .reachme-form:not(:placeholder-shown) {
-  background: rgba(0, 255, 128, 0.15);     /* light green */
+  background: rgba(0, 255, 128, 0.15);     
   border-color: #00c36b;
-  backdrop-filter: blur(5px);              /* 💫 blur effect */
+  backdrop-filter: blur(5px);              
   box-shadow: 0 0 10px rgba(0, 255, 128, 0.4);
 }
 .reachme-form:-webkit-autofill {
@@ -382,6 +382,7 @@ span,b{
     }
     .reachme,.content,.contain{
         height:150vh;
+        width:100%;
     }
     .topic{
         display:flex;
