@@ -299,6 +299,11 @@ textarea::placeholder {
 span,b{
     height:20px;
 }
+.footer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
 @media (max-width:997px){
     .outer-box{
         display:flex;
